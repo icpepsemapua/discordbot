@@ -1,0 +1,15 @@
+{
+  "name": "icpepsemapua-discord-bot",
+  "version": "0.0.1",
+  "description": "Discord bot for ICpEP.SE-Mapua",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marq Roldan",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
