@@ -30,6 +30,7 @@ These are the following planned to be for the discord bot. Status description ar
 
 ---
 ## Contributors
+- [Marq Roldan](https://www.linkedin.com/in/marqroldan/)
 - [Van Philip Panugan](https://www.linkedin.com/in/van-philip-panugan-9a6025184/)
 - [John Rivera](https://www.linkedin.com/in/john-rivera-5099691b6/)
 
