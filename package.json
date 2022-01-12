@@ -1,0 +1,15 @@
+{
+  "name": "org_bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for ICPeP.SE",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angie Samson",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.5.1",
+    "dotenv": "^11.0.0"
+  }
+}
