@@ -20,16 +20,19 @@ bot.login(process.env.Disc_TOKEN)
 
 bot.on('ready', () =>{console.log(`Logged in as ${bot.user.tag}!`)})
 
+//Feature 1 part 1//////////////////////////////////////////////////
+
+//user types !verify to #verification
 bot.on ('messageCreate', async message => {
     if(message.author.bot) return //ignores bot messages
     if(message.content.toLowerCase()==='!verify' && message.channel.id === '930711292203921428' )
     {
         await message.delete() //to avoid spam
         //role ID
-        const role = message.guild.roles.cache.get('930714095869636639')
+        const ver_role = message.guild.roles.cache.get('930714095869636639')
         if(role){
             try{
-                await message.member.roles.add(role)
+                await message.member.roles.add(ver_role)
                 console.log("Role Added!")
             }
             catch(err){
@@ -38,16 +41,17 @@ bot.on ('messageCreate', async message => {
         }
     }
 })
+
 //prompts user to verify
 bot.on('guildMemberAdd', member => {
     console.log(member.user.tag)
     
-    const welc_message = `Welcome <@${member.user.id}>
-    to the server!. Click ${member.guild.channels.cache.get(ver_channel).toString()}
-    and type !verify to be verified in the server.`
+    const welc_message = `Welcome <@${member.user.id}>to the server!
+    Click ${member.guild.channels.cache.get(ver_channel).toString()}
+    and type *!verify* to see channels and have a Verified Role.`
     
     const send2ver = member.guild.channels.cache.get(welc_channel)
     send2ver.send(welc_message)
 })
 
-
+///////////////////////////////////////////////////////////////////////
