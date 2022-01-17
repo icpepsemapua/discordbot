@@ -4,6 +4,7 @@ const welc_channel = '930455522153472021'
 const bot_comm_channel = '931526820141072435'
 const command_PREFIX = '!'
 const ver_role = '930714095869636639'
+const admin_role = '930716161220435968'
 
 const help = require("./commands/help.js")
 const play =  require("./commands/play.js")
